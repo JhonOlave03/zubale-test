@@ -6,3 +6,6 @@ xgboost==3.0.4
 uvicorn==0.35.0
 fastapi==0.116.1
 pydantic==1.10.22
+pytest==7.4.0
+requests
+httpx
