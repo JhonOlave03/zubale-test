@@ -1,12 +1,13 @@
-FROM python:3.10-slim
+FROM python:3.9-slim
 
 WORKDIR /app
 
+# Instalar dependencias
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# copiar código
+# Copiar código
 COPY . .
 
-# default: servir API
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+# Default command (sirve para API)
+CMD ["python", "app.py"]
