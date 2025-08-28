@@ -1,0 +1,21 @@
+# Python virtual envs
+.venv/
+venv/
+ENV/
+env/
+
+# Bytecode
+__pycache__/
+*.pyc
+
+# Test and editor files
+.pytest_cache/
+.vscode/
+.idea/
+
+# Artifacts (modelos)
+artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
